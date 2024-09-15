@@ -1,0 +1,28 @@
+/*Copied from the implementation in Reforged for attribute prediction in background tooltip*/
+.msc_attributePredictionHeader
+{
+	border-top: 1px solid black;
+	margin-top:1rem;
+}
+.msc_attributePredictionContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.msc_attributePredictionContainer > .msc_attributePredictionItem
+{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+.msc_attributePredictionContainer > .msc_attributePredictionItem > .msc_attributePredictionSingle
+{
+	width: 30px;
+	font-size: 16px;
+	text-align: right;
+}
+.msc_attributePredictionContainer > .msc_attributePredictionItem > img
+{
+	width: 20px;
+	height: 20px;
+}
