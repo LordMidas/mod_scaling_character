@@ -81,6 +81,7 @@ this.mod_scaling_character_effect <- ::inherit("scripts/skills/skill", {
 			this.m.StolenPerks.push(perkDef.ID);
 			local perk = ::new(perkDef.Script);
 			perk.m.IsRefundable = false;
+			this.getContainer().add(perk);
 			::Tactical.EventLog.log(::Const.UI.getColorizedEntityName(actor) + " learned " + ::MSU.Text.colorGreen(perkDef.Name) + " from killing " + ::Const.UI.getColorizedEntityName(_targetEntity));
 			actor.getPerkTree().addPerk(perkDef.ID, ::Math.rand(1, 7));
 		}
